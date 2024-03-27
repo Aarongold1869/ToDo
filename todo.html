@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo</title>
+</head>
+
+<body>
+
+    <style>
+        .container {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            margin: auto;
+        }
+
+        .todo-list {
+            list-style: none;
+            padding: 0;
+            border: 1px solid #000;
+            padding: 10px;
+            border-radius: 15px;
+            width: 50%;
+            height: 300px;
+        }
+
+        .todo-list li {
+            padding: 4px;
+            border-bottom: 1px solid #000;
+            background-color: rgb(189, 248, 228);
+            /* text-align: left; */
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            /* align-content: center; */
+        }
+
+        .todo-list li:hover {
+            background-color: rgb(75, 245, 188);
+        }
+
+    </style>
+
+    <div class="container">
+
+        <h1>ToDo</h1>
+
+        <form style="width:50%;">
+            <input type="text" name="todo" id="todo" placeholder="Enter a To Do." style="width:80%;">
+            <button type="submit">Create</button>
+        </form>
+
+        <ul id="todos" class="todo-list">
+            <li>
+                <p>Example To Do</p>
+
+                <div>
+                    <button>Complete</button>
+                    <button>Delete</button>
+                </div>
+            </li>
+        </ul>
+
+    </div>
+
+</body>
+
+</html>
